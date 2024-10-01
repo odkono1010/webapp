@@ -1,0 +1,86 @@
+<section class="main-container"></section>
+
+    <section class="customer-info">
+      <article>
+        <h3>Захиалагчийн мэдээлэл</h3>
+        <label for="name">Овог, Нэр:</label>
+        <input type="text" id="name" name="name">
+      </article>
+      <article>
+        <label for="email">И-мэйл хаяг:</label>
+        <input type="email" id="email" name="email">
+      </article>
+      <article>
+        <label for="phone1">Утасны дугаар 1:</label>
+        <input type="tel" id="phone1" name="phone1">
+      </article>
+      <article>
+        <label for="phone2">Утасны дугаар 2:</label>
+        <input type="tel" id="phone2" name="phone2">
+      </article>
+      <article>
+        <label for="vat">НӨАТ авах төрөл:</label>
+        <select id="vat" name="vat">
+          <option value="individual">Хувь хүн</option>
+          <option value="organization">Байгууллага</option>
+        </select>
+      </article>      
+    </section>
+    <section class="branch-selection">
+      <article>
+        <h3>Салбар сонгох</h3>
+        <select id="branch" name="branch">
+            <option value="salbar1"></option>
+            <option value="salbar2"></option>
+            <option value="salbar3"></option>
+            <option value="salbar4"></option>
+            <option value="salbar5"></option>
+        </select>
+      </article>
+    </section>
+    <section class="additional-notes">
+        <h3>Нэмэлт тэмдэглэл</h3>
+           <textarea id="notes" name="notes"></textarea>
+    </section>
+    <section class="payment-methods">
+      <article>
+        <h3>Төлбөр төлөх хэлбэр</h3>
+        <label>
+          <input type="radio" name="payment" value="cash"> Cash
+        </label>
+      </article>
+      <article>
+        <label>
+          <input type="radio" name="payment" value="card"> Credit/Debit Cards
+        </label>
+      </article>
+    </section>
+    <section class="sags">
+        <article>
+            <h3>Таны сагс</h3>
+            <label for="cart-items">Сагсанд хийсэн бүтээгдэхүүн:</label>
+            <select id="cart-items" name="cart-items">
+              <option value="product1">Бүтээгдэхүүн 1</option>
+              <option value="product2">Бүтээгдэхүүн 2</option>
+              <option value="product3">Бүтээгдэхүүн 3</option>
+            </select>
+          </article>
+    </section>
+    <section class="zahialga">
+        <article>
+          <h3>Захиалга</h3>
+          <p>Нийт дүн: </p>
+        </article>
+        <article>
+          <label for="coupon">Купон ашиглах:</label>
+          <input type="text" id="coupon" name="coupon" placeholder="Купон код оруулна уу">
+          <button type="button" onclick="applyCoupon()">Купон ашиглах</button>
+        </article>
+      </section>      
+    <section class="terms-and-conditions">
+      <label>
+        <input type="checkbox" name="agree"> Үйлчилгээний нөхцөлийг зөвшөөрөх
+      </label>
+      <button type="submit">Захиалах</button>
+    </section>
+  </section>
